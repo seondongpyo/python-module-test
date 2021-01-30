@@ -1,7 +1,7 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
 from PyQt5.QtCore import QCoreApplication
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
 
 
 class TestApp(QWidget):
@@ -13,10 +13,10 @@ class TestApp(QWidget):
     def initialize_ui(self):
         self.add_quit_button()  # 종료 버튼 추가
 
-        self.setWindowTitle('Test Application')  # 타이틀 설정
-        self.move(300, 300)  # 위치 지정
-        self.resize(400, 400)  # 크기 지정
-        self.show()  # 화면 표시
+        self.setWindowTitle('QPushButton')
+        self.move(300, 300)
+        self.resize(400, 400)
+        self.show()
 
     def add_quit_button(self):
         btn = QPushButton('종료', self)  # QPushButton('버튼에 표시될 텍스트', '버튼이 위치할 부모 위젯')
